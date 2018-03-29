@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/bottegaDash/david_ash_view_tool
+  revision: 746be0a5550894a33e12da9a8b311a56e2f3eedd
+  specs:
+    david_ash_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -213,6 +219,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  david_ash_view_tool!
   devise (~> 4.4, >= 4.4.1)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)

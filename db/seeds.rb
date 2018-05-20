@@ -36,14 +36,13 @@ end
 
 puts "10 blog posts created"
 
-5.times do  |skill|
-  Skill.create!(
-    title: "Rails #{skill}",
-    percent_utilized: 15
-  )
-end
 
-puts "5 skills created"
+Skill.create!(title: "html/css", percent_utilized: 80)
+Skill.create!(title: "javascript", percent_utilized: 80)
+Skill.create!(title: "ruby", percent_utilized: 68)
+Skill.create!(title: "ruby on rails", percent_utilized: 68)
+Skill.create!(title: "python", percent_utilized: 85)
+
 
 8.times do |portfolios|
   Portfolio.create!(

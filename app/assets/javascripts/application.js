@@ -16,6 +16,8 @@
 //= require jquery-ui/widgets/sortable
 //= require cocoon
 //= require gritter
+//= require lib/typed
+//= require typed-implementation
 //= require rails-ujs
 //= requiret cable
 //= require turbolinks

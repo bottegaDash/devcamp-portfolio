@@ -12,11 +12,13 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'tech-news', to: 'pages#tech_news'
 
+=begin
   resources :blogs do
     member do
       get :toggle_status
     end
   end
+=end
 
   mount ActionCable.server => '/cable'
   root to: 'pages#home'

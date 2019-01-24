@@ -35,10 +35,6 @@ module ApplicationHelper
         title: "Contact"
       },
       {
-        url: blogs_path,
-        title: "Blogs"
-      },
-      {
         url: portfolios_path,
         title: "Portfolios"
       },

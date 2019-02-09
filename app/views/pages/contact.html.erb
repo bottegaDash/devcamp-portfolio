@@ -1,6 +1,6 @@
 <div class="app-card-container">
   <div class="card">
-    <h1>Pages#contact</h1>
+    <h1>Contact</h1>
 
     <hr>
 
@@ -10,14 +10,18 @@
         <p>Colonial Beach, VA</p>
 
         <h3>Phone</h3>
-        <p><%= number_to_phone "4195617800"%></p>
+        <% if current_user.is_a?(GuestUser)%>
+          <p>Please register or log in to see phone number</p>
+        <% else %>
+          <p><%= number_to_phone "4195617800"%></p>
+        <% end %>
 
         <h3>Email</h3>
-        <p><a href="mailto:dash004@odu.edu?subject=PortfolioContact" "email me">Email me</a></p>
+        <p><a href="mailto:davidjash2@gmail.com?subject=PortfolioContact" "email me">Email me</a></p>
       </div>
 
       <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.40129670608!2d-76.96924378523718!3d38.20057897968413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b73cf5ccee1657%3A0xd41abddde746ac2f!2s29+Randall+Rd%2C+Colonial+Beach%2C+VA+22443!5e0!3m2!1sen!2sus!4v1523415208288" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50130.93374056622!2d-77.01547786138082!3d38.25205324674244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b73d7b2708ad29%3A0xafea7259ac528fb0!2sColonial+Beach%2C+VA+22443!5e0!3m2!1sen!2sus!4v1549717502591" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div=>
     </div>
   </div>

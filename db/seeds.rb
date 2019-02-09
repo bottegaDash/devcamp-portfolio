@@ -42,32 +42,3 @@ Skill.create!(title: "javascript", percent_utilized: 80)
 Skill.create!(title: "ruby", percent_utilized: 68)
 Skill.create!(title: "ruby on rails", percent_utilized: 68)
 Skill.create!(title: "python", percent_utilized: 85)
-
-
-8.times do |portfolios|
-  Portfolio.create!(
-    title: "Portfolio title: #{portfolios}",
-    subtitle: "Ruby on Rails",
-    body: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker",
-    main_image: "http://placehold.it/600x4s00",
-    thumb_image: "http://placehold.it/350x200"
-  )
-end
-
-1.times do |portfolios|
-  Portfolio.create!(
-    title: "Portfolio title: #{portfolios}",
-    subtitle: "Angular",
-    body: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker",
-    main_image: "http://placehold.it/600x4s00",
-    thumb_image: "http://placehold.it/350x200"
-  )
-end
-puts "9 portfolio items created"
-
-3.times do |technology|
-  Portfolio.last.technologies.create!(
-    name: "Technology #{technology}"
-  )
-end
-puts "3 technologies created"
